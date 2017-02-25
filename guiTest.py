@@ -5,7 +5,7 @@
 
 from turtle import *
 import Tkinter
-import lib
+import pylib
 
 
 
@@ -35,10 +35,10 @@ def btn_draw_pentagram_command(canvas):
 	# Clean screen
 	screen.clear()
 
-	# lib.draw.Pentagram(canvas)
-	p = lib.draw.Pentagram(canvas)
+	# pylib.draw.Pentagram(canvas)
+	p = pylib.draw.Pentagram(canvas)
 	p.draw_pentagram()
-	n = lib.draw.Note(canvas)
+	n = pylib.draw.Note(canvas)
 	# n.note_whole(1, "F3")
 	# for i in range(10):
 		# n.note_half(i, "F3")
@@ -46,7 +46,7 @@ def btn_draw_pentagram_command(canvas):
 		# n.draw_note_eighth(i,"F3")
 		# n.draw_note_sixteenth(i, "F3")
 	# p.supplementary_line(1)
-	c = lib.draw.Clef(canvas)
+	c = pylib.draw.Clef(canvas)
 	c.draw_clef("G")
 
 def btn_clean_screen_command(canvas):
